@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+ int main()
+{
+     int x;
+     float z;
+     float y;
+     cin >> x >> y;
+      
+     if(x>=y)
+     {
+         cout << fixed << setprecision(4) << y  <<endl;
+     }
+     else if(x%5==0)
+     {
+       z=y-x-0.50;
+       cout <<fixed << setprecision(4) << z  << endl;
+      }
+      else
+      {
+          cout << fixed << setprecision(4) << y << endl;
+      }
+      
+
+        
+
+}

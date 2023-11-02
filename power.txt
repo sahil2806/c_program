@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int power (int a ,int b)
+{ 
+      int i,p=1;
+      for(i=1;i<=b;i++)
+      {
+         p=p*a;
+
+      }
+      return p ;
+
+}
+int main()
+{
+       int z;
+       int m,n;
+       cin >>m >>n;
+       z=power(m,n);
+       cout << "power" << z<< endl;
+       cin >>m >>n;
+       z=power(m,n);
+       cout << "power" <<z<< endl;
+        
+
+}

@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+      int n,l;
+       
+      cout << "enter a number";
+      cin >> n;
+
+     int i,j,a;
+
+    for(i=2;i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            n=n/i;
+
+           for(j=2;j<=i;j++)
+         {
+               if(i%j==0)
+              {
+             
+                   break;
+              }
+
+         }
+          if(i==j)
+          {
+              cout << i  << " ";
+          }
+    
+            i--;
+            
+        }
+         
+    }
+}
+
+ 
+

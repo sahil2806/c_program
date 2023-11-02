@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{     
+       int n,ns;
+       cout << "enter a amount:";
+       cin >> n;
+
+       ns=100;
+
+       switch(ns)
+       {
+        case 100:
+         if(n/100==0)
+        { break;}
+
+        cout << "no of 100 rs notes:" <<int( n/100)<<endl;
+         n=n%100;
+          
+
+        case 50:
+        if(n/50==0)
+        { break;}
+        cout << "no of 50rs notes:"<<int ( n/50)<<endl;
+        n=n%50;
+         
+
+
+        case 20:
+        if(n/20==0)
+        { break;}
+        cout <<  "no of 20 rs notes:"<<int (n/20)<<endl;
+         n=n%20;
+          
+
+
+        case 10:
+        if(n/10==0)
+        { break;}
+        cout <<  "no of 10 rs notes:"<<int (n/10)<<endl;
+         n=n%10;
+         
+
+
+       }
+}

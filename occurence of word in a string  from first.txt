@@ -1,0 +1,59 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+      
+      string x,y;
+
+      getline(cin,x);
+
+      
+      
+      cout << "enter a word that you want to match:";
+      cin >> y;
+
+      int i,j,l1,l2;
+      l1=x.size();
+      x.push_back(' ');
+      l2=y.size();
+      
+      
+      j=0;
+      int p=0;
+      for(i=0;i<=l1;i++)
+      {
+
+        if(x[i]==y[j])
+        {
+             j++;
+        }
+        else if(x[i]==32)
+        {
+          p++;
+
+           if(j==l2)
+          {
+            break;
+          }
+        }
+
+        else if(x[i]!=y[j])
+        {
+          j=0;
+        }
+ 
+
+     }
+     if(j==l2)
+     {
+      cout << p;
+     }
+     else{
+      cout << "not matched";
+     }
+ 
+}
+
+
+
+ 

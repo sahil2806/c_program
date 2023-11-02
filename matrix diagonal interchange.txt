@@ -1,0 +1,57 @@
+ #include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+      int i,j,n,s=0;
+      cout << "enter a number:";
+      cin >> n;
+      int x[n][n],t;
+
+
+      for(i=0;i<n;i++)
+      {
+            for(j=0;j<n;j++)
+            {
+                  cin >> x[i][j];
+                   
+            }
+            cout << endl;
+      }
+
+      cout << "matrix" << endl;
+
+      for(i=0;i<n;i++)
+      {
+            for(j=0;j<n;j++)
+            {
+                  cout <<  x[i][j];
+                   
+            }
+            cout << endl;
+      }
+
+      for(i=0;i<n;i++)
+      {
+            t=x[i][i];
+            x[i][n+i-3]=x[i][n-i-1];
+            x[i][n-i-1]=t;
+      }
+
+      cout << "matrix" << endl;
+
+      for(i=0;i<n;i++)
+      {
+            for(j=0;j<n;j++)
+            {
+                  cout <<  x[i][j];
+                   
+            }
+            cout << endl;
+      }
+
+
+
+
+         
+}

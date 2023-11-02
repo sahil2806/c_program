@@ -1,0 +1,90 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int r1,c1,r2,c2,i,j;
+    
+    
+    cout << "enter row:";
+    cin >> r1 ;
+
+    cout << "enter column:";
+    cin >> c1 ;
+
+    cout << "enter row:";
+    cin >> r2 ;
+
+    cout << "enter column:";
+    cin >> c2 ;
+     int x[r1][c1],y[r2][c2] ;
+     
+
+     
+
+      for(i=0;i<r1;i++)
+    {
+           for(j=0;j<c1;j++)
+           {
+                cin >> x[i][j];
+           }
+           cout << endl;
+    }
+    cout << "matrix 1:";
+    cout << endl;
+
+    for(i=0;i<r1;i++)
+    {
+           for(j=0;j<c1;j++)
+           {
+                cout << x[i][j] << " ";
+           }
+           cout << endl;
+    }
+
+      for(i=0;i<r2;i++)
+    {
+           for(j=0;j<c2;j++)
+           {
+                cin >> y[i][j];
+           }
+           cout << endl;
+    }
+    cout << "matrix 2:";
+    cout << endl;
+
+    
+    for(i=0;i<r2;i++)
+    {
+           for(j=0;j<c2;j++)
+           {
+                cout << y[i][j] << " ";
+           }
+           cout << endl;
+    }
+    
+
+    for(i=0;i<r1;i++)
+    {
+           for(j=0;j<c1;j++)
+           {
+                 if(x[i][j]!=y[i][j])
+                 {
+                    break;
+                 }
+           }
+           if(j!=c1)
+           {
+            break;
+           }
+    }
+    if(i==r1&&j==c1)
+    {
+        cout << "equal matrix"<< endl;
+    }
+
+    else
+    {
+        cout << "not equal matrix"<< endl;
+    }
+
+}

@@ -1,0 +1,73 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int r,c,i,j;
+    
+    cout << "enter row:";
+    cin >> r ;
+
+    cout << "enter column:";
+    cin >> c ;
+     int x[r][c],y[r][c],z[r][c];
+     
+
+     
+
+      for(i=0;i<r;i++)
+    {
+           for(j=0;j<c;j++)
+           {
+                cin >> x[i][j];
+           }
+           cout << endl;
+    }
+    cout << "matrix 1:";
+    cout << endl;
+
+    for(i=0;i<r;i++)
+    {
+           for(j=0;j<c;j++)
+           {
+                cout << x[i][j] << " ";
+           }
+           cout << endl;
+    }
+
+    for(i=0;i<r;i++)
+    {
+           for(j=0;j<c;j++)
+           {
+                cin >> y[i][j];
+           }
+           cout << endl;
+    }
+    cout << " matrix2:";
+    cout << endl;
+    for(i=0;i<r;i++)
+    {
+           for(j=0;j<c;j++)
+           {
+                cout <<  y[i][j] <<" ";
+           }
+           cout << endl;
+    }
+   
+cout << "addition of matrix";
+cout << endl;
+
+    for(i=0;i<r;i++)
+    {
+           for(j=0;j<c;j++)
+           {
+                 cout << x[i][j] +  y[i][j] ;
+           }
+           cout << endl;
+    }
+
+     
+
+}
+
+ 
+
